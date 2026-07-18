@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>Lisakhanya Mateane-Portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .cover{
+            background-image:url('landing.png');
+            background-size:cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            padding-right: 290px;
+            padding-bottom: 5px;
+        }
+
+        .cover h1{
+            font-family:'Cinzel',serif;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom:40px;
+            margin-left:70px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(216, 116, 133);
+        }
+        .cover p{
+            color: rgb(173, 64, 137);
+            font-family:'Cinzel',serif;
+            font-size: 20px;
+            margin-right: 140px;
+            margin-bottom: 70px
+        }
+
+        .divider{
+            color: rgb(216, 116, 133);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 60px;
+            margin-right: 170px;
+            font-size: 12px;
+            text-shadow: 0 0 8px rgb(216, 116, 133);
+        }
+        .divider span{
+            width: 120px;
+            height:2px;
+            background-color: rgb(216, 116, 133);
+            display: block;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-right: 100px;
+        }
+
+        .cover button {
+            background-color: rgb(212, 138, 151);
+            color:rgb(173, 64, 137);
+            padding: 7px;
+            display: block;
+            width: 120px;
+            cursor: pointer;
+            margin-top: 8px;
+
+        }
+        
+        .cover button:hover{
+            background-color: rgba(235, 154, 198, 0.89);
+        
+        }
+
+        @media (max-width: 768px){
+            .cover{
+                padding-right: 20px;
+                padding-left: 20px;
+                align-items: center;
+            }
+            .cover h1{
+                font-size: 24px;   
+                text-align: center;
+                margin-left: 0;
+            }
+            .cover p {
+                font-size: 14px;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+          @media (max-width:480px){
+            .cover {
+                padding-right: 5px;
+                padding-left: 20px;
+                align-items: center;
+            }
+
+            .cover h1 {
+                font-size: 24px;   
+                text-align: center;
+                margin-left: 0;
+    }
+
+            .cover p {
+                font-size: 14px;
+                text-align: center;
+                margin-right: 0;
+    }
+           .divider{
+            padding-left: 180px;
+           }
+           .buttons{
+            padding-left: 80px;
+            gap: 5px;
+           }
+          }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="cover">
+        <div class="divider">
+            <span></span>
+                 ◆
+            <span></span>
+        </div>
+        <h1>Lisakhanya Thandile Mateane</h1>
+        <p>Aspiring Front-End & Web Developer</p>
+        <div class="buttons">
+         <button onclick="window.location.href='About.html'">ABOUT</button>
+         <button onclick="window.location.href='Projects.html'">PROJECTS</button>
+         <button onclick="window.location.href='Contact.html'">CONTACT</button>
+    </div>
+</div>
+
+
+
+</body>
+</html>
